@@ -7,27 +7,44 @@
           <link rel="stylesheet" href="style.css">
       </head>
       <body>
-        <div class="headerz">
-          <h1><span>Level up</span> your coding skills with Webistry.</h1>
-        </div>
         <div class="container">
-          <div class="formz">
-            <h3>Let's get started by knowing more about you.</h3>
-            <form action="#">
-              <label for="name">Name:</label><br>
-              <input type="text" id="name" name="name" value="Enter your name"><br>
-              <label for="email">Email</label><br>
-              <input type="text" id="email" name="email" value="Enter your email"><br><br>
-              <label for="language">What's your favourite coding language?</label><br>
-              <select name="language" id="select-language">
-                  <option value="Javascript">JavaScript</option>
-                  <option value="HTML">HTML</option>
-              </select>
-              <input type="checkbox" name="accuracy" id="accurate">
-              <label for="accurate">The information provided above is accurate</label>
-              <input class="buttonz" type="submit" value="Level up">
-            </form>
-         </div>
-       </div>
+          <div class="header">
+            <img src="assets/webistry.svg" alt="webistry logo">
+            <img class="wagon" src="assets/lewagon.svg" alt="lewagon logo">
+          </div>
+          <div class="align"><h1><span>Level up</span> your coding skills with Webistry.</h1></div>
+          <div>
+            <div class="formz">
+              <h3>Let's get started by knowing more about you.</h3>
+
+              <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" value="Enter your name" required><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" value="Enter your email" required><br><br>
+                <label for="language">What's your favourite coding language?</label><br>
+                <select name="language" id="select-language">
+                    <option value="Javascript">JavaScript</option>
+                    <option value="HTML">HTML</option>
+                </select>
+                <div class="checkboxz">
+                  <input type="checkbox" name="accuracy" id="accurate">
+                  <label for="accurate">The information provided above is accurate</label>
+                </div>
+                <div class="buttonz">
+                 <input type="submit" value="Level up">
+                </div>
+                <div id="error"></div>
+              </form>
+
+              <div id="confirmation" style="display: none;">
+                <h2>Success! You’re all set.</h2>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
       </body>
   </html>
