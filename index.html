@@ -6,6 +6,7 @@
           <meta name="description" content="Level Up your coding skills with Webistry!">
           <link rel="stylesheet" href="style.css">
       </head>
+
       <body>
         <div class="container">
           <div class="header">
@@ -15,13 +16,13 @@
           <div class="align"><h1><span>Level up</span> your coding skills with Webistry.</h1></div>
           <div>
             <div class="formz">
-              <h3>Let's get started by knowing more about you.</h3>
 
               <form>
+                <h3>Let's get started by knowing more about you.</h3>
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" value="Enter your name" required><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
                 <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" value="Enter your email" required><br><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
                 <label for="language">What's your favourite coding language?</label><br>
                 <select name="language" id="select-language">
                     <option value="Javascript">JavaScript</option>
@@ -36,15 +37,18 @@
                 </div>
                 <div id="error"></div>
               </form>
-
-              <div id="confirmation" style="display: none;">
-                <h2>Success! You’re all set.</h2>
+              <div id="confirmation" class="hidden">
+                <h2 id="confirmationMessage">Thank You</h2>
+                <p>You’re all set now.</p>
               </div>
+
 
             </div>
           </div>
+
+
         </div>
 
-
+      <script src="myjavascript.js"></script>
       </body>
   </html>
