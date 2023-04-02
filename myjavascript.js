@@ -1,9 +1,9 @@
   const form = document.querySelector('form');
-  const nameInput = document.querySelector('#name');
-  const emailInput = document.querySelector('#email');
-  const checkboxInput = document.querySelector('#accurate');
-  const errorElement = document.querySelector('#error');
-  const confirmation = document.querySelector('#confirmation');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const checkboxInput = document.getElementById('accurate');
+  const errorElement = document.getElementById('error');
+  const confirmation = document.getElementById('confirmation');
   const confirmationMessage = document.getElementById('confirmationMessage');
 
   form.addEventListener('submit', (e) => {

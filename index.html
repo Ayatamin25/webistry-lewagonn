@@ -13,39 +13,54 @@
             <img src="assets/webistry.svg" alt="webistry logo">
             <img class="wagon" src="assets/lewagon.svg" alt="lewagon logo">
           </div>
-          <div class="align"><h1><span>Level up</span> your coding skills with Webistry.</h1></div>
-          <div>
-            <div class="formz">
 
-              <form>
-                <h3>Let's get started by knowing more about you.</h3>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
-                <label for="language">What's your favourite coding language?</label><br>
-                <select name="language" id="select-language">
-                    <option value="Javascript">JavaScript</option>
-                    <option value="HTML">HTML</option>
-                </select>
-                <div class="checkboxz">
-                  <input type="checkbox" name="accuracy" id="accurate">
-                  <label for="accurate">The information provided above is accurate</label>
-                </div>
-                <div class="buttonz">
-                 <input type="submit" value="Level up">
-                </div>
-                <div id="error"></div>
-              </form>
-              <div id="confirmation" class="hidden">
-                <h2 id="confirmationMessage">Thank You</h2>
-                <p>You’re all set now.</p>
-              </div>
-
-
-            </div>
+          <div class="align">
+            <h1><span>Level up</span> your coding skills with Webistry.</h1>
           </div>
 
+
+          <div class="formz">
+            <form action="#">
+              <h3 class="top-of-form">Let's get started by knowing more about you.</h3>
+              <div class="align-form">
+                  <div class="inputs">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                  </div>
+
+                  <div class="inputs-email">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
+                  </div>
+
+                  <div class="selects">
+                    <label for="language">What's your favourite coding language?</label><br>
+                    <select name="language" id="select-language">
+                        <option value="Javascript">JavaScript</option>
+                        <option value="HTML">HTML</option>
+                    </select>
+                  </div>
+
+                  <div class="checkboxz">
+                    <input type="checkbox" name="accuracy" id="accurate">
+                    <label for="accurate">The information provided above is accurate</label>
+                  </div>
+
+                  <div class="buttonz">
+                    <input type="submit" value="Level up">
+                  </div>
+
+                  <div id="error"></div>
+
+                </div>
+            </form>
+
+            <div id="confirmation" class="hidden">
+              <h2 id="confirmationMessage">Thank You</h2>
+              <p>You’re all set now.</p>
+            </div>
+
+          </div>
 
         </div>
 
